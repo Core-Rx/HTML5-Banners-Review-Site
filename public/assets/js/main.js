@@ -882,7 +882,7 @@ jQuery.extend(jQuery.easing,
             $ad_container.css({
                 'width': currentBanner.width,
                 'height': currentBanner.height
-            }).find('iframe').attr({
+            }).find('iframe.banner-content').attr({
                 'src': currentBanner.file + '/index.html' + cacheBuster(currentBanner.file)
             });
         }
