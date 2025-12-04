@@ -884,6 +884,8 @@ jQuery.extend(jQuery.easing,
                 'height': currentBanner.height
             }).find('iframe.banner-content').attr({
                 'src': currentBanner.file + '/index.html' + cacheBuster(currentBanner.file)
+            }).find('iframe.banner-content2').attr({
+                'src': currentBanner.file + '/fallback.jpg' + cacheBuster(currentBanner.file)
             });
         }
 
