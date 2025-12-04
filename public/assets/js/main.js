@@ -888,6 +888,8 @@ jQuery.extend(jQuery.easing,
                 'src': currentBanner.file + '/index.html' + cacheBuster(currentBanner.file)
             });
 
+            alert('test');
+            alert(currentBanner.file);
             $ad_container2.css({
                 'width': currentBanner.width,
                 'height': currentBanner.height
