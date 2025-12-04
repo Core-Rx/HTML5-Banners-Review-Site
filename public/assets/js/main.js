@@ -865,8 +865,8 @@ jQuery.extend(jQuery.easing,
                 zipfile: _tab.data('zipfile')
             };
             // remove existing banner
-            $ad_container.find('iframe.banner-content').attr('src', 'about:blank');
-            $ad_container2.find('iframe.banner-content2').attr('src', 'about:blank');
+            $ad_container.find('iframe').attr('src', 'about:blank');
+            $ad_container2.find('iframe').attr('src', 'about:blank');
 
             setTimeout(function() {
                 $file_meta.fadeOut(100);
@@ -888,8 +888,6 @@ jQuery.extend(jQuery.easing,
                 'src': currentBanner.file + '/index.html' + cacheBuster(currentBanner.file)
             });
 
-            alert('test');
-            alert(currentBanner.file);
             $ad_container2.css({
                 'width': currentBanner.width,
                 'height': currentBanner.height
