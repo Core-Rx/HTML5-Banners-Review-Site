@@ -864,7 +864,8 @@ jQuery.extend(jQuery.easing,
                 zipfile: _tab.data('zipfile')
             };
             // remove existing banner
-            $ad_container.find('iframe').attr('src', 'about:blank');
+            $ad_container.find('iframe.banner-content').attr('src', 'about:blank');
+            $ad_container2.find('iframe.banner-content2').attr('src', 'about:blank');
 
             setTimeout(function() {
                 $file_meta.fadeOut(100);
@@ -883,10 +884,15 @@ jQuery.extend(jQuery.easing,
                 'width': currentBanner.width,
                 'height': currentBanner.height
             }).find('iframe.banner-content').attr({
-                'src': currentBanner.file + '/index.html2' + cacheBuster(currentBanner.file)
+                'src': currentBanner.file + '/index.html' + cacheBuster(currentBanner.file)
+            });
+
+            $ad_container2.css({
+                'width': currentBanner.width,
+                'height': currentBanner.height
             }).find('iframe.banner-content2').attr({
                 'src': currentBanner.file + '/fallback.jpg' + cacheBuster(currentBanner.file)
-            });
+            });            
         }
 
         function displayFileMeta() {
