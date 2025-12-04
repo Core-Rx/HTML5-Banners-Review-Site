@@ -822,6 +822,7 @@ jQuery.extend(jQuery.easing,
     ==================================================================================================== */
     var assetsBanners = 'banners/';
     var $ad_container = $('.ad-container');
+    var $ad_container2 = $('.ad-container2');
     var $file_meta = $('.file-meta span');
     var sizeRegExp = new RegExp('(\\d{2,}x\\d{2,})', 'g');
     var currentBanner;
